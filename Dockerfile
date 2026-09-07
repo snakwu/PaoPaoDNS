@@ -2,7 +2,7 @@ FROM alpine:edge AS builder
 RUN apk update && \
     apk upgrade --no-cache
 #actions COPY build_test_ok /
-COPY --from=sliamb/prebuild-paopaodns /src/ /src/
+COPY --from=snakwu/prebuild-paopaodns /src/ /src/
 COPY src/ /src/
 RUN sh /src/build.sh
 # build file check
