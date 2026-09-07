@@ -74,4 +74,4 @@ ENV TZ=Asia/Shanghai \
 VOLUME /data
 WORKDIR /data
 EXPOSE 53/udp 53/tcp 5304/udp 5304/tcp 7889/tcp
-CMD /usr/sbin/init.sh
+CMD ["/usr/sbin/init.sh"]
